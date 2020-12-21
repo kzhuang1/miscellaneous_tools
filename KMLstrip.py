@@ -49,7 +49,7 @@ def main():
                         line=line.lstrip("<description>![CDATA[")
                         line=line.rstrip("</div>]]</description>")
                         #print(line)
-                        outfile.write(line + '\n')
+                        outfile.write(line+'\n')
             infile.close()
             outfile.close()
             
