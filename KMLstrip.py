@@ -42,7 +42,6 @@ def main():
             filename=entry.path.lstrip(directory)
             filename=filename.rstrip(".kml")
             with open(entry.path, 'r') as infile, open(outdir+filename+'.txt', 'w') as outfile:
-                copy = False
                 for line in infile:
                     if "<description>" in line:
                         line=line.lstrip()
