@@ -31,7 +31,7 @@ outdir = directory+'output/'
 try:
     os.mkdir(outdir)
 except OSError:
-    print ("Creation of the directory %s failed" % outdir)
+    print ("Creation of the directory %s failed or directory already exists" % outdir)
 else:
     print ("Successfully created the directory %s " % outdir)
     
